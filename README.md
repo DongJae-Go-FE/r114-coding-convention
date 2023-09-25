@@ -1,6 +1,6 @@
-# RDS(R114 Design System) Homepage
+# R114 Coding Convention
 
-부동산 114 디자인 시스템 홈페이지
+부동산 114 코딩 컨벤션
 
 ## Stack
 
@@ -9,8 +9,9 @@
 | Type            | Module                                                                                                                                                                                                                               |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Package Manager | [![yarn](https://img.shields.io/badge/Yarn-v1.22.19-117cad.svg)](https://yarnpkg.com/)                                                                                                                                               |
-| Language        | [![TypeScript](https://img.shields.io/badge/TypeScript-v4.9.4-3178c6.svg)](https://www.typescriptlang.org/)                                                                                                                          |
-| Framework       | [![Next.js](https://img.shields.io/badge/Next.js-v13.4.3-000.svg)](https://nextjs.org/) [![React](https://img.shields.io/badge/React-v18.2.0-61dafb.svg)](https://nextjs.org/)                                                       |
+| Language        | [![JavaScript](https://img.shields.io/badge/JavaScript-v4.9.4-3178c6.svg)](https://www.typescriptlang.org/)                                                                                                                          |
+| Framework       | [![React](https://img.shields.io/badge/React-v18.2.0-61dafb.svg)](https://nextjs.org/)                                                       
+                          |
 | Style           | [![Emotion](https://img.shields.io/badge/Emotion-v11.10.5-c43bad.svg)](https://emotion.sh/docs/introduction/)                                                                                                                        |
 
 
