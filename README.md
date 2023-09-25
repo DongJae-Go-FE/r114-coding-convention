@@ -9,9 +9,8 @@
 | Type            | Module                                                                                                                                                                                                                               |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Package Manager | [![yarn](https://img.shields.io/badge/Yarn-v1.22.19-117cad.svg)](https://yarnpkg.com/)                                                                                                                                               |
-| Language        | [![JavaScript](https://img.shields.io/badge/JavaScript-v4.9.4-3178c6.svg)](https://www.typescriptlang.org/)                                                                                                                          |
-| Framework       | [![React](https://img.shields.io/badge/React-v18.2.0-61dafb.svg)](https://nextjs.org/)                                                       
-                          |
+| Language        | [![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow.svg)]([https://www.typescriptlang.org/](https://www.ecma-international.org/))                                                                                                                          |
+| Framework       |  [![React](https://img.shields.io/badge/React-v18.2.0-61dafb.svg)](https://nextjs.org/)                                                       |
 | Style           | [![Emotion](https://img.shields.io/badge/Emotion-v11.10.5-c43bad.svg)](https://emotion.sh/docs/introduction/)                                                                                                                        |
 
 
@@ -26,3 +25,10 @@
     - templates
   - hooks
   - utils - network 관련 함수나 기타 유틸 함수 및 외부 인프라 연결 세팅 등
+
+
+## React API
+
+- Router
+- Context
+- Redux 제외
