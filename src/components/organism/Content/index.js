@@ -1,11 +1,8 @@
 import React from "react";
 import Styled from "./styled";
 
-function Content() {
-  return (
-    <Styled>
-    </Styled>
-  );
+function Content(props) {
+  return <Styled>{props.children}</Styled>;
 }
 
 export default Content;

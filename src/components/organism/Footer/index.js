@@ -4,6 +4,7 @@ import Styled from "./styled";
 function Footer() {
   return (
     <Styled>
+      asd
     </Styled>
   );
 }
