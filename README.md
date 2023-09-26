@@ -14,6 +14,27 @@
 | Style           | [![Emotion](https://img.shields.io/badge/Emotion-v11.10.5-c43bad.svg)](https://emotion.sh/docs/introduction/)                                                                                                                        |
 
 
+## Download
+
+### Git Clone
+
+```shell
+git clone https://github.com/DongJae-Go-FE/r114-coding-convention.git
+```
+
+### Package Install
+
+```shell
+yarn install
+```
+
+### project Start
+
+```shell
+yarn start
+```
+
+
 ## Folder Structure
 
 - public - 정적 파일 보관 디렉토리
@@ -31,4 +52,31 @@
 
 - Router
 - Context
-- Redux 제외
+- Redux 제외 검토중
+
+
+## Extension
+
+- EsLint 검토중
+- Prettier 검토중
+
+
+## Import Order(검토중)
+
+1. Hooks, API, Module
+2. Components
+3. Img
+4. Styled, CSS
+
+
+
+## Emotion Styled and Css Order
+
+1. 크기 : width height overflow
+2. 형태 : display visibility
+3. 흐름 : float clear
+4. 위치 : position left right top bottom z-index
+5. 박스 : margin padding border
+6. 배경 : background
+7. 글자 : text font color
+8. cursor transition transform 등 위에서 언급되지 않은 속성 
