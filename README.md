@@ -51,8 +51,8 @@ yarn start
 ## React API
 
 - Router
-- Context
-- Redux 제외 검토중
+- Context 제외 검토중
+- Redux 
 
 
 ## Extension

@@ -5,8 +5,8 @@ const Styled = styled.div`
   height: calc(100% - 80px);
   padding: 20px;
   background-color: var(--blue400);
-
-  ul{
+  transition: transform 0.5;
+  ul {
     list-style: none;
   }
 `;
