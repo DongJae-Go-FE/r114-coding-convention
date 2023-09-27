@@ -1,9 +1,11 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import Styled from "./styled";
 
 function LeftMenu() {
+  let menuState = useSelector((state) => state.menu);
   return (
-    <Styled>
+    <Styled menuState={menuState}>
       <ul>
         <li>서브 링크1</li>
         <li>서브 링크2</li>

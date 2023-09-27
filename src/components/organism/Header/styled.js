@@ -7,6 +7,9 @@ const Styled = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 0 40px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
   background-color: var(--primary400);
 
   div {
