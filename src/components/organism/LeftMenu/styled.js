@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { css } from "@emotion/react";
+import { mobileBreakPoint, transitionDelay } from "../../../constants/size";
 
 const Styled = styled.div`
   width: 200px;
@@ -18,16 +19,21 @@ const Styled = styled.div`
       case false:
         return css`
           left: 0;
-          transition: left 0.5s, width 0.5s;
+          transition: left ${transitionDelay}s, width ${transitionDelay}s;
         `.styles;
       case true:
       default:
         return css`
           left: -200px;
-          transition: left 0.5s, width 0.5s;
+          transition: left ${transitionDelay}s, width ${transitionDelay}s;
         `.styles;
     }
   }}
+
+  @media (max-width: ${mobileBreakPoint}px) {
+    left: -200px;
+    transition: left ${transitionDelay}s, width ${transitionDelay}s;
+  }
 `;
 
 export default Styled;
