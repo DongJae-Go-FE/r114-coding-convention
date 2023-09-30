@@ -27,6 +27,7 @@ function Header() {
           레프트 메뉴
         </button>
       </div>
+      <button type="button">반응형 메뉴</button>
     </Styled>
   );
 }

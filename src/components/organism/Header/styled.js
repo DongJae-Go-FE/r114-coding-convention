@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { mobileBreakPoint } from "../../../constants/constants";
 
 const Styled = styled.header`
   width: 100%;
@@ -21,6 +22,20 @@ const Styled = styled.header`
       display: flex;
       gap: 0 20px;
       list-style: none;
+    }
+  }
+
+  > button{
+    display: none;
+  }
+
+  @media (max-width: ${mobileBreakPoint}px) {
+    > div{
+      display: none;
+    }
+
+    > button{
+      display: block;
     }
   }
 `;

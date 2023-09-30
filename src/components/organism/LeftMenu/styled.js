@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { css } from "@emotion/react";
-import { mobileBreakPoint, transitionDelay } from "../../../constants/size";
+import { mobileBreakPoint, transitionDelay } from "../../../constants/constants";
 
 const Styled = styled.div`
   width: 200px;
