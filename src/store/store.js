@@ -10,11 +10,22 @@ let menu = createSlice({
   },
 });
 
-export default configureStore({
-  reducer: {
-    menu: menu.reducer,
+let router = createSlice({
+  name: "routerState",
+  initialState: "",
+  reducers: {
+    routerStatePush(state) {
+      return state;
+    },
   },
 });
 
+export default configureStore({
+  reducer: {
+    menu: menu.reducer,
+    routerState: router.reducer,
+  },
+});
 
-export let { changeState } = menu.actions 
+export let { changeState } = menu.actions;
+export let { routerStatePush } = router.actions;
