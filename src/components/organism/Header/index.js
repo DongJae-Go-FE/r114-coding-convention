@@ -1,5 +1,5 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { changeState, routerStatePush } from "../../../store/store";
 
@@ -7,8 +7,9 @@ import Styled from "./styled";
 
 function Header() {
   let dispatch = useDispatch();
+  let routerState = useSelector((state) => state.router);
   return (
-    <Styled>
+    <Styled routerState={routerState}>
       <h1>
         <Link
           to="/"

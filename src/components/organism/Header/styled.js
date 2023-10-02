@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { css } from "@emotion/react";
 import { mobileBreakPoint } from "../../../constants/constants";
 
 const Styled = styled.header`
@@ -25,16 +26,28 @@ const Styled = styled.header`
     }
   }
 
-  > button{
+  > button {
     display: none;
   }
 
+  ${({ routerState }) => {
+    if (routerState === "") {
+      return css`
+        div {
+          button {
+            display: none;
+          }
+        }
+      `.styles;
+    }
+  }}
+
   @media (max-width: ${mobileBreakPoint}px) {
-    > div{
+    > div {
       display: none;
     }
 
-    > button{
+    > button {
       display: block;
     }
   }
