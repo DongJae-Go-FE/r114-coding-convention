@@ -1,6 +1,9 @@
 import styled from "@emotion/styled";
 import { css } from "@emotion/react";
-import { mobileBreakPoint, transitionDelay } from "../../../constants/constants";
+import {
+  mobileBreakPoint,
+  transitionDelay,
+} from "../../../constants/constants";
 
 const Styled = styled.div`
   width: 200px;
@@ -27,6 +30,15 @@ const Styled = styled.div`
           left: -200px;
           transition: left ${transitionDelay}s, width ${transitionDelay}s;
         `.styles;
+    }
+  }}
+
+  ${({ routerState }) => {
+    if (routerState === "") {
+      return css`
+        left: -200px;
+        transition: left ${transitionDelay}s, width ${transitionDelay}s;
+      `.styles;
     }
   }}
 

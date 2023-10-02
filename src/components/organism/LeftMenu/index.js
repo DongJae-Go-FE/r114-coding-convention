@@ -6,6 +6,7 @@ import Styled from "./styled";
 function LeftMenu() {
   let menuState = useSelector((state) => state.menu);
   let routerState = useSelector((state) => state.router);
+
   const menuList = () => {
     switch (routerState) {
       case "":
@@ -80,9 +81,10 @@ function LeftMenu() {
           </ul>
         );
     }
-  }
+  };
+
   return (
-    <Styled menuState={menuState}>
+    <Styled menuState={menuState} routerState={routerState}>
       {menuList()}
     </Styled>
   );

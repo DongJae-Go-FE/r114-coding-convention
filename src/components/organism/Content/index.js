@@ -4,7 +4,13 @@ import Styled from "./styled";
 
 function Content({ children }) {
   let menuState = useSelector((state) => state.menu);
-  return <Styled menuState={menuState}>{children}</Styled>;
+  let routerState = useSelector((state) => state.router);
+
+  return (
+    <Styled menuState={menuState} routerState={routerState}>
+      {children}
+    </Styled>
+  );
 }
 
 export default Content;

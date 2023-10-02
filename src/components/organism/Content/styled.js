@@ -9,6 +9,7 @@ const Styled = styled.div`
   background-color: var(--orange400);
   position: absolute;
   top: 80px;
+
   ${({ menuState }) => {
     switch (menuState) {
       case false:
@@ -26,6 +27,17 @@ const Styled = styled.div`
         `.styles;
     }
   }}
+  
+  ${({ routerState }) => {
+    if (routerState === "") {
+      return css`
+          width: 100%;
+          left: 0;
+          transition: left ${transitionDelay}s, width ${transitionDelay}s;
+      `.styles;
+    }
+  }}
+
   @media (max-width: ${mobileBreakPoint}px) {
     width: 100%;
     left: 0;
