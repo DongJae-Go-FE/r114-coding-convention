@@ -11,11 +11,11 @@ let menu = createSlice({
 });
 
 let router = createSlice({
-  name: "routerState",
+  name: "router",
   initialState: "",
   reducers: {
-    routerStatePush(state) {
-      return state;
+    routerStatePush(state, link) {
+      return (state = link.payload);
     },
   },
 });
@@ -23,7 +23,7 @@ let router = createSlice({
 export default configureStore({
   reducer: {
     menu: menu.reducer,
-    routerState: router.reducer,
+    router: router.reducer,
   },
 });
 

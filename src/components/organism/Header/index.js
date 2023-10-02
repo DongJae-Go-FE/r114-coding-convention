@@ -1,15 +1,12 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { changeState, routerStatePush } from "../../../store/store";
 
 import Styled from "./styled";
 
 function Header() {
-  let menuState = useSelector((state) => state.menu);
-  let routerState = useSelector((state) => state.router);
   let dispatch = useDispatch();
-  console.log(menuState, routerState);
   return (
     <Styled>
       <h1>
