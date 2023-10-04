@@ -11,7 +11,9 @@ const Styled = styled.div`
   padding: 20px;
   position: fixed;
   top: 80px;
-  background-color: var(--blue400);
+  background-color: var(--white);
+
+  border-right: 1px solid var(--gray300);
 
   ul {
     list-style: none;

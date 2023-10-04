@@ -6,7 +6,7 @@ const Styled = styled.div`
   height: calc(100% - 80px);
   display: flex;
   flex-direction: column;
-  background-color: var(--orange400);
+  background-color: var(--white);
   position: absolute;
   top: 80px;
 

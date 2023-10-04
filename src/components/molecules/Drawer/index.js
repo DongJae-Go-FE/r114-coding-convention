@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { createPortal } from "react-dom";
 import { mobileBreakPoint } from "../../../constants/constants";
+
 function Drawer({ children, device }) {
   const [windowWidth, setWindwoWidth] = useState();
   const body = document.body;

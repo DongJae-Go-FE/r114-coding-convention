@@ -3,11 +3,15 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { drawerStateChange } from "../../../store/store";
 import { changeState, routerStatePush } from "../../../store/store";
+import LeftMenuSVG from "../../../assets/svgs/LeftMenuSVG";
+import RightMenuSVG from "../../../assets/svgs/RightMenuSVG";
+import HamburgerMenuSVG from "../../../assets/svgs/HamburgerMenuSVG";
 
 import Styled from "./styled";
 
 function Header() {
   let dispatch = useDispatch();
+  let menuState = useSelector((state) => state.menu);
   let routerState = useSelector((state) => state.router);
   return (
     <Styled routerState={routerState}>
@@ -18,7 +22,7 @@ function Header() {
             dispatch(routerStatePush(""));
           }}
         >
-          로고
+          <span>부동산 114</span>
         </Link>
       </h1>
       <div>
@@ -70,7 +74,7 @@ function Header() {
             dispatch(changeState());
           }}
         >
-          레프트 메뉴
+          {menuState ? <RightMenuSVG /> : <LeftMenuSVG />}
         </button>
       </div>
       <button
@@ -79,7 +83,7 @@ function Header() {
           dispatch(drawerStateChange(true));
         }}
       >
-        반응형 메뉴
+        <HamburgerMenuSVG/>
       </button>
     </Styled>
   );

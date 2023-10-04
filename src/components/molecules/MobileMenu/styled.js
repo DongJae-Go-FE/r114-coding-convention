@@ -8,6 +8,14 @@ const Styled = styled.div`
   right: 0;
   z-index: 1001;
   background-color: #fff;
+
+  button{
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
 `;
 
 export default Styled;

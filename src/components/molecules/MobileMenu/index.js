@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { drawerStateChange } from "../../../store/store";
+import CloseSvg from "../../../assets/svgs/CloseSvg";
 import Styled from "./styled";
 
 function MobileMenu() {
@@ -13,7 +14,7 @@ function MobileMenu() {
           dispatch(drawerStateChange(false));
         }}
       >
-        닫기
+        <CloseSvg/>
       </button>
     </Styled>
   );
