@@ -12,7 +12,7 @@ function Content({ children }) {
   return (
     <Styled menuState={menuState} routerState={routerState}>
       {children}
-      <Drawer>
+      <Drawer device="mobile">
         <Dim>
           <MobileMenu />
         </Dim>
