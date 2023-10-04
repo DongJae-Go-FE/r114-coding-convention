@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { css } from "@emotion/react";
 import { mobileBreakPoint } from "../../../constants/constants";
-import Logo from "../../../assets/logo.png"
+import Logo from "../../../assets/logo.png";
 
 const Styled = styled.header`
   width: 100%;
@@ -21,7 +21,7 @@ const Styled = styled.header`
       display: block;
       width: 150px;
       height: 51px;
-      background: url(${Logo}) no-repeat center /contain;
+      background: url(${Logo}) no-repeat center / contain;
       span {
         overflow: hidden;
         width: 1px;
@@ -42,20 +42,28 @@ const Styled = styled.header`
       gap: 0 20px;
       list-style: none;
 
-      li{
-        a{
+      li {
+        a {
           color: var(---gray700);
           text-decoration: none;
         }
       }
     }
 
-    button{
+    button {
       width: 30px;
       height: 30px;
       border: none;
       background: transparent;
       cursor: pointer;
+
+      span {
+        overflow: hidden;
+        width: 1px;
+        height: 1px;
+        position: absolute;
+        clip: rect(0 0 0 0);
+      }
     }
   }
 
@@ -66,6 +74,14 @@ const Styled = styled.header`
     background-color: transparent;
     border: none;
     cursor: pointer;
+
+    span {
+      overflow: hidden;
+      width: 1px;
+      height: 1px;
+      position: absolute;
+      clip: rect(0 0 0 0);
+    }
   }
 
   ${({ routerState }) => {

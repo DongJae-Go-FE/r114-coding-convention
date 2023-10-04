@@ -15,6 +15,7 @@ function MobileMenu() {
         }}
       >
         <CloseSvg/>
+        <span>모바일 메뉴 닫기 버튼</span>
       </button>
     </Styled>
   );

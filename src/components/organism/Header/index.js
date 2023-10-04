@@ -22,7 +22,7 @@ function Header() {
             dispatch(routerStatePush(""));
           }}
         >
-          <span>부동산 114</span>
+          <span>부동산 114 로고</span>
         </Link>
       </h1>
       <div>
@@ -75,6 +75,7 @@ function Header() {
           }}
         >
           {menuState ? <RightMenuSVG /> : <LeftMenuSVG />}
+          <span> {menuState ? "메뉴 닫기": "메뉴 열기"}</span>
         </button>
       </div>
       <button
@@ -83,7 +84,8 @@ function Header() {
           dispatch(drawerStateChange(true));
         }}
       >
-        <HamburgerMenuSVG/>
+        <HamburgerMenuSVG />
+        <span>모바일 메뉴</span>
       </button>
     </Styled>
   );

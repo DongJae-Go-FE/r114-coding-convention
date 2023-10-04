@@ -9,12 +9,20 @@ const Styled = styled.div`
   z-index: 1001;
   background-color: #fff;
 
-  button{
+  button {
     width: 30px;
     height: 30px;
     background: transparent;
     border: none;
     cursor: pointer;
+
+    span {
+      overflow: hidden;
+      width: 1px;
+      height: 1px;
+      position: absolute;
+      clip: rect(0 0 0 0);
+    }
   }
 `;
 
