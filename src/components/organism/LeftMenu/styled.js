@@ -17,6 +17,17 @@ const Styled = styled.div`
 
   ul {
     list-style: none;
+    li {
+      a {
+        font-size: 20px;
+        color: var(--gray700);
+        text-decoration: none;
+      }
+
+      &:not(:last-child){
+        margin-bottom: 12px;
+      }
+    }
   }
 
   ${({ menuState }) => {
