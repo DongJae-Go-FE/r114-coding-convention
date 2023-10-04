@@ -15,7 +15,7 @@ function App() {
         <LeftMenu />
         <Content>
           <Routes>
-            <Route path="/" element={<>라우터 셋팅 화면</>}/>
+            <Route path="/" element={<>라우터 셋팅 화면</>} />
           </Routes>
           <Footer />
         </Content>
