@@ -30,30 +30,26 @@ let drawerIsOpen = createSlice({
   },
 });
 
-//메인 메뉴 스테이트
-
-let mainMenuOn = createSlice({
-  name: "mainMenuOn",
+let subMenu = createSlice({
+  name: "subMenu",
   initialState: 0,
   reducers: {
-    mainMenuOnChange(state, data) {
+    subMenuChange(state, data) {
       return (state = data.payload);
     },
   },
 });
-
-//서브 메뉴 스테이트
 
 export default configureStore({
   reducer: {
     menu: menu.reducer,
     router: router.reducer,
     drawerIsOpen: drawerIsOpen.reducer,
-    mainMenuOn: mainMenuOn.reducer,
+    subMenu: subMenu.reducer,
   },
 });
 
 export let { changeState } = menu.actions;
 export let { routerStatePush } = router.actions;
 export let { drawerStateChange } = drawerIsOpen.actions;
-export let { mainMenuOnChange } = mainMenuOn.actions;
+export let { subMenuChange } = subMenu.actions;

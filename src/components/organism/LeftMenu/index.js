@@ -1,11 +1,15 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { LeftMenuData } from "./LeftMenuData";
+import { subMenuChange } from "../../../store/store";
 import Styled from "./styled";
 
 function LeftMenu() {
+  let dispatch = useDispatch();
   let menuState = useSelector((state) => state.menu);
   let routerState = useSelector((state) => state.router);
+  let subMenuState = useSelector((state) => state.subMenu);
 
   const menuList = () => {
     switch (routerState) {
@@ -15,69 +19,97 @@ function LeftMenu() {
       case "0":
         return (
           <ul>
-            <li>
-              <Link to="/1">서브 링크1-1</Link>
-            </li>
-            <li>
-              <Link to="/1/2">서브 링크1-2</Link>
-            </li>
-            <li>
-              <Link to="/1/3">서브 링크1-3</Link>
-            </li>
-            <li>
-              <Link to="/1/4">서브 링크1-4</Link>
-            </li>
+            {LeftMenuData[0].map((data) => {
+              return (
+                <li key={data.key}>
+                  <Link
+                    to={data.to}
+                    onClick={() => {
+                      dispatch(subMenuChange(data.key));
+                    }}
+                    style={
+                      subMenuState === data.key
+                        ? { fontWeight: "bold" }
+                        : { fontWeight: "normal" }
+                    }
+                  >
+                    {data.title}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         );
       case "1":
         return (
           <ul>
-            <li>
-              <Link to="/2">서브 링크2-1</Link>
-            </li>
-            <li>
-              <Link to="/2/2">서브 링크2-2</Link>
-            </li>
-            <li>
-              <Link to="/2/3">서브 링크2-3</Link>
-            </li>
-            <li>
-              <Link to="/2/4">서브 링크2-4</Link>
-            </li>
+            {LeftMenuData[1].map((data) => {
+              return (
+                <li key={data.key}>
+                  <Link
+                    to={data.to}
+                    onClick={() => {
+                      dispatch(subMenuChange(data.key));
+                    }}
+                    style={
+                      subMenuState === data.key
+                        ? { fontWeight: "bold" }
+                        : { fontWeight: "normal" }
+                    }
+                  >
+                    {data.title}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         );
       case "2":
         return (
           <ul>
-            <li>
-              <Link to="/3">서브 링크3-1</Link>
-            </li>
-            <li>
-              <Link to="/3/2">서브 링크3-2</Link>
-            </li>
-            <li>
-              <Link to="/3/3">서브 링크3-3</Link>
-            </li>
-            <li>
-              <Link to="/3/4">서브 링크3-4</Link>
-            </li>
+            {LeftMenuData[2].map((data) => {
+              return (
+                <li key={data.key}>
+                  <Link
+                    to={data.to}
+                    onClick={() => {
+                      dispatch(subMenuChange(data.key));
+                    }}
+                    style={
+                      subMenuState === data.key
+                        ? { fontWeight: "bold" }
+                        : { fontWeight: "normal" }
+                    }
+                  >
+                    {data.title}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         );
       case "3":
         return (
           <ul>
-            <li>
-              <Link to="/4">서브 링크4-1</Link>
-            </li>
-            <li>
-              <Link to="/4/2">서브 링크4-2</Link>
-            </li>
-            <li>
-              <Link to="/4/3">서브 링크4-3</Link>
-            </li>
-            <li>
-              <Link to="/4/4">서브 링크4-4</Link>
-            </li>
+            {LeftMenuData[3].map((data) => {
+              return (
+                <li key={data.key}>
+                  <Link
+                    to={data.to}
+                    onClick={() => {
+                      dispatch(subMenuChange(data.key));
+                    }}
+                    style={
+                      subMenuState === data.key
+                        ? { fontWeight: "bold" }
+                        : { fontWeight: "normal" }
+                    }
+                  >
+                    {data.title}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         );
     }
