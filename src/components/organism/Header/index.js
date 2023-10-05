@@ -13,6 +13,14 @@ function Header() {
   let dispatch = useDispatch();
   let menuState = useSelector((state) => state.menu);
   let routerState = useSelector((state) => state.router);
+
+  const headerMenuData = [
+    { key: "0", title: "링크1" },
+    { key: "1", title: "링크2" },
+    { key: "2", title: "링크3" },
+    { key: '3', title: "링크4" },
+  ];
+
   return (
     <Styled routerState={routerState}>
       <h1>
@@ -27,46 +35,20 @@ function Header() {
       </h1>
       <div>
         <ul>
-          <li>
-            <Link
-              to="/1"
-              onClick={() => {
-                dispatch(routerStatePush("1"));
-              }}
-            >
-              링크1
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/2"
-              onClick={() => {
-                dispatch(routerStatePush("2"));
-              }}
-            >
-              링크2
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/3"
-              onClick={() => {
-                dispatch(routerStatePush("3"));
-              }}
-            >
-              링크3
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/4"
-              onClick={() => {
-                dispatch(routerStatePush("4"));
-              }}
-            >
-              링크4
-            </Link>
-          </li>
+          {headerMenuData.map((data) => {
+            return (
+              <li key={data.key}>
+                <Link
+                  to={data.key}
+                  onClick={() => {
+                    dispatch(routerStatePush(data.key));
+                  }}
+                >
+                  {data.title}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
         <button
           type="button"
@@ -75,7 +57,7 @@ function Header() {
           }}
         >
           {menuState ? <RightMenuSVG /> : <LeftMenuSVG />}
-          <span> {menuState ? "메뉴 닫기": "메뉴 열기"}</span>
+          <span> {menuState ? "메뉴 닫기" : "메뉴 열기"}</span>
         </button>
       </div>
       <button

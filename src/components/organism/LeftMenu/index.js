@@ -12,7 +12,7 @@ function LeftMenu() {
       case "":
       default:
         return "";
-      case "1":
+      case "0":
         return (
           <ul>
             <li>
@@ -29,7 +29,7 @@ function LeftMenu() {
             </li>
           </ul>
         );
-      case "2":
+      case "1":
         return (
           <ul>
             <li>
@@ -46,7 +46,7 @@ function LeftMenu() {
             </li>
           </ul>
         );
-      case "3":
+      case "2":
         return (
           <ul>
             <li>
@@ -63,7 +63,7 @@ function LeftMenu() {
             </li>
           </ul>
         );
-      case "4":
+      case "3":
         return (
           <ul>
             <li>
