@@ -33,9 +33,10 @@ function MobileMenu() {
             <li key={data.key}>
               <button
                 type="button"
-                onClick={() => {
+                onClick={(e) => {
                   dispatch(routerStatePush(data.key));
                   dispatch(subMenuChange(0));
+                  e.stopPropagation();
                 }}
                 style={
                   routerState === data.key
@@ -57,8 +58,9 @@ function MobileMenu() {
                     <li key={data2.key}>
                       <Link
                         to={data2.to}
-                        onClick={() => {
+                        onClick={(e) => {
                           dispatch(subMenuChange(data2.key));
+                          e.stopPropagation();
                         }}
                         style={
                           subMenuState === data2.key
