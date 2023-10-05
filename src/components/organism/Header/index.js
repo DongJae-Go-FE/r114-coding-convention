@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { drawerStateChange } from "../../../store/store";
+import { MenuData } from "./MenuData";
 import {
   changeState,
   routerStatePush,
@@ -18,13 +19,6 @@ function Header() {
   let menuState = useSelector((state) => state.menu);
   let routerState = useSelector((state) => state.router);
 
-  const headerMenuData = [
-    { key: "0", title: "링크0" },
-    { key: "1", title: "링크1" },
-    { key: "2", title: "링크2" },
-    { key: "3", title: "링크3" },
-  ];
-
   return (
     <Styled routerState={routerState}>
       <h1>
@@ -40,7 +34,7 @@ function Header() {
       </h1>
       <div>
         <ul>
-          {headerMenuData.map((data) => {
+          {MenuData.map((data) => {
             return (
               <li key={data.key}>
                 <Link

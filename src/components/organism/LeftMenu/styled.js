@@ -12,7 +12,6 @@ const Styled = styled.div`
   position: fixed;
   top: 80px;
   background-color: var(--white);
-
   border-right: 1px solid var(--gray300);
 
   ul {
@@ -24,7 +23,7 @@ const Styled = styled.div`
         text-decoration: none;
       }
 
-      &:not(:last-child){
+      &:not(:last-child) {
         margin-bottom: 12px;
       }
     }
