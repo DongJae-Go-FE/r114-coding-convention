@@ -4,7 +4,8 @@ import Styled from "./styled";
 function Footer() {
   return (
     <Styled>
-      asd
+      © R114 Corporation
+      <p>IT Headquarters Kar Dong Jae</p>
     </Styled>
   );
 }

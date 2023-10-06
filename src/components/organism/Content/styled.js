@@ -3,7 +3,7 @@ import { css } from "@emotion/react";
 import { mobileBreakPoint, transitionDelay } from "../../../constants/constants";
 
 const Styled = styled.div`
-  height: calc(100% - 80px);
+  min-height: calc(100% - 80px);
   display: flex;
   flex-direction: column;
   background-color: var(--white);

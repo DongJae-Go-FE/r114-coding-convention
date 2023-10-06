@@ -1,14 +1,14 @@
 import styled from "@emotion/styled";
 import { mobileBreakPoint } from "../../../constants/constants";
 
-const Styled = styled.h2`
-  margin-bottom: 32px;
-  font-size: 34px;
-  font-weight: 800;
-  color: var(--gray800);
+const Styled = styled.h3`
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--gray-black);
 
   @media (max-width: ${mobileBreakPoint}px) {
-    font-size: 6vw;
+    font-size: 4vw;
   }
 `;
 

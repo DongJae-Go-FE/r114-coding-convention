@@ -97,6 +97,7 @@ const Styled = styled.header`
   }}
 
   @media (max-width: ${mobileBreakPoint}px) {
+    padding: 0 3vw;
     > div {
       display: none;
     }
