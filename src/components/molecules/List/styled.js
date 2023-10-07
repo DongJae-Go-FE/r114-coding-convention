@@ -9,9 +9,14 @@ const Styled = styled.div`
     list-style: none;
 
     li {
-        display: flex;
-        align-items: center;
-        gap: 0 5px;
+      display: flex;
+      align-items: center;
+      gap: 0 5px;
+
+      color: var(--black);
+      font-weight: bold;
+      text-decoration: none;
+
       &::before {
         content: "";
         display: block;
@@ -34,12 +39,13 @@ const Styled = styled.div`
   }
 
   @media (max-width: ${mobileBreakPoint}px) {
-    ul{
-        li{
-            a{
-                font-size: 3.5vw;
-            }
+    ul {
+      li {
+        font-size: 3.5vw;
+        a {
+          font-size: 3.5vw;
         }
+      }
     }
   }
 `;

@@ -46,7 +46,7 @@ function Header() {
                   style={
                     data.key === routerState
                       ? { fontWeight: "bold" }
-                      : { fontWeight: "normal" }
+                      : { fontWeight: "500" }
                   }
                 >
                   {data.title}

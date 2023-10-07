@@ -1,4 +1,5 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import PageTitle from "../../../atoms/PageTitle";
 import SubTitle from "../../../atoms/SubTitle";
 import Parrgraph from "../../../atoms/Parrgraph";
@@ -6,9 +7,16 @@ import Hr from "../../../atoms/Hr";
 import List from "../../../molecules/List";
 import { MenuData } from "../../../organism/Header/MenuData";
 import { LeftMenuData } from "../../../organism/LeftMenu/LeftMenuData";
+import { routerStatePush, subMenuChange } from "../../../../store/store";
 import Styled from "./styled";
 
 function Main() {
+  let dispatch = useDispatch();
+  const listClick = (data1, data2) => {
+    dispatch(routerStatePush(data1));
+    dispatch(subMenuChange(data2));
+  };
+
   return (
     <Styled>
       <PageTitle title="부동산114 Coding Convention" />
@@ -27,6 +35,9 @@ function Main() {
               title={data.title}
               list={LeftMenuData[data.key]}
               link={true}
+              menuData={data.key}
+              listClick={listClick}
+              key={data.key}
             />
           );
         })}
