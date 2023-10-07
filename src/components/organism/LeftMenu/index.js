@@ -29,7 +29,7 @@ function LeftMenu() {
                     }}
                     style={
                       subMenuState === data.key
-                        ? { fontWeight: "bold" }
+                        ? { fontWeight: "bold", color: "var(--black)" }
                         : { fontWeight: "normal" }
                     }
                   >
@@ -53,7 +53,7 @@ function LeftMenu() {
                     }}
                     style={
                       subMenuState === data.key
-                        ? { fontWeight: "bold" }
+                        ? { fontWeight: "bold", color: "var(--black)" }
                         : { fontWeight: "normal" }
                     }
                   >

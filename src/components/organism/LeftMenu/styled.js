@@ -21,6 +21,11 @@ const Styled = styled.div`
         font-size: 20px;
         color: var(--gray700);
         text-decoration: none;
+
+        &:hover {
+          color: var(--black);
+          font-weight: bold !important; //보류
+        }
       }
 
       &:not(:last-child) {

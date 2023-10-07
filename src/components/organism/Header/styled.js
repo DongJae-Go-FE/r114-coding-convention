@@ -44,8 +44,14 @@ const Styled = styled.header`
 
       li {
         a {
-          color: var(---gray700);
+          color: var(--gray700);
           text-decoration: none;
+          font-weight: 500;
+
+          &:hover{
+            color: var(--black);
+            font-weight: bold !important; //보류
+          }
         }
       }
     }
