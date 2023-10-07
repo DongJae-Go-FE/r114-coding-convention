@@ -1,10 +1,9 @@
 import React from "react";
 import Styled from "./styled";
 
-function Hr({top, bottom}) {
+function Hr({ top, bottom, mobileTop, mobileBottom }) {
   return (
-    <Styled top={top} bottom={bottom}>
-    </Styled>
+    <Styled top={top} bottom={bottom} mobileTop={mobileTop} mobileBottom={mobileBottom}></Styled>
   );
 }
 

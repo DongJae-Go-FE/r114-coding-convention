@@ -21,9 +21,9 @@ function Main() {
     <Styled>
       <PageTitle title="부동산114 Coding Convention" />
       <Parrgraph>부동산 114와 HDC LABS의 Coding Convention입니다.</Parrgraph>
-      <Hr top={80} bottom={80} />
+      <Hr top={80} bottom={80} mobileTop={15} mobileBottom={15}/>
       <SubTitle title="개요 (Overview)" />
-      <Parrgraph bottom={160}>
+      <Parrgraph bottom={160} mobileBottom={15}>
         부동산 114와 HDC LABS의 합작 프로젝트 SmartManage의 원활한 협업을 위해
         Coding Convention 제작하게 됐습니다.
       </Parrgraph>

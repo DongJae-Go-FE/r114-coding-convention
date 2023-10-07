@@ -8,6 +8,7 @@ const Styled = styled.p`
   white-space: pre-line;
 
   @media (max-width: ${mobileBreakPoint}px) {
+    margin-bottom: ${(props) => (props.mobileBottom ? props.mobileBottom : 0)}vw;
     font-size: 3vw;
   }
 `;

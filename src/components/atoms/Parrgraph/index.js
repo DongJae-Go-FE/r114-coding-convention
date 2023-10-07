@@ -1,9 +1,9 @@
 import React from "react";
 import Styled from "./styled";
 
-function Parrgraph({children, bottom}) {
+function Parrgraph({children, bottom, mobileBottom}) {
   return (
-    <Styled bottom={bottom}>
+    <Styled bottom={bottom} mobileBottom={mobileBottom}>
       {children}
     </Styled>
   );

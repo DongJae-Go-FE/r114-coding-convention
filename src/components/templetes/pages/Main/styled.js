@@ -14,8 +14,9 @@ const Styled = styled.div`
   }
 
   @media (max-width: ${mobileBreakPoint}px) {
-    padding: 80px 3vw 30vw;
+    padding: 15vw 3vw 25vw;
     > div{
+      margin-bottom: 15vw;
         >div{
             width: 100%;
 
