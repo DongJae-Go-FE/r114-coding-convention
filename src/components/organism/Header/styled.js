@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import { css } from "@emotion/react";
 import { mobileBreakPoint } from "../../../constants/constants";
+import { transitionDelay } from "../../../constants/constants";
 import Logo from "../../../assets/logo.png";
 
 const Styled = styled.header`
@@ -44,13 +45,30 @@ const Styled = styled.header`
 
       li {
         a {
-          color: var(--gray700);
+          position: relative;
+          color: var(--black);
           text-decoration: none;
-          font-weight: 500;
+          font-weight: bold;
 
-          &:hover{
-            color: var(--black);
-            font-weight: bold !important; //보류
+          &::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 3px;
+            position: absolute;
+            bottom: -3px;
+            background-color: var(--primary600);
+            transition: color ${transitionDelay}s, width ${transitionDelay}s;
+          }
+
+          &:hover {
+            color: var(--primary600);
+            font-weight: bold;
+
+            &::after {
+              width: 100%;
+              transition: color ${transitionDelay}s, width ${transitionDelay}s;
+            }
           }
         }
       }
@@ -96,6 +114,25 @@ const Styled = styled.header`
         div {
           button {
             display: none;
+          }
+        }
+      `.styles;
+    } else {
+      return css`
+        div {
+          ul {
+            li {
+              &:nth-of-type(${parseInt(routerState) + 1}) {
+                a {
+                  font-weight: bold;
+                  color: var(--primary600);
+
+                  &::after {
+                    width: 100%;
+                  }
+                }
+              }
+            }
           }
         }
       `.styles;
