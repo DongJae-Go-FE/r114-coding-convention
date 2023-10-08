@@ -30,8 +30,10 @@ const Styled = styled.div`
   > ul {
     margin: 20px 0;
     list-style: none;
-    li {
-      button {
+    > li {
+      > a {
+        display: flex;
+        align-items: center;
         width: 100%;
         height: 40px;
         padding-left: 20px;
@@ -41,8 +43,7 @@ const Styled = styled.div`
         font-size: 20px;
         font-weight: bold;
         color: var(--gray700);
-        text-align: left;
-        cursor: pointer;
+        text-decoration: none;
 
         &:hover {
           color: var(--black);
@@ -61,6 +62,7 @@ const Styled = styled.div`
       }}
 
       ul {
+        display: none;
         margin: 10px 0;
         list-style: none;
 
@@ -82,6 +84,18 @@ const Styled = styled.div`
           }
         }
       }
+
+      ${({ routerState }) => {
+        if (routerState) {
+          return css`
+            &:nth-of-type(${parseInt(routerState) + 1}) {
+              ul {
+                display: block;
+              }
+            }
+          `.styles;
+        }
+      }}
     }
   }
 `;

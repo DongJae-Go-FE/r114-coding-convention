@@ -17,7 +17,7 @@ function MobileMenu() {
   let subMenuState = useSelector((state) => state.subMenu);
 
   return (
-    <Styled routerState={routerState}>
+    <Styled routerState={routerState} subMenuState={subMenuState}>
       <button
         type="button"
         onClick={() => {
@@ -31,8 +31,8 @@ function MobileMenu() {
         {MenuData.map((data) => {
           return (
             <li key={data.key}>
-              <button
-                type="button"
+              <Link
+                to={data.key}
                 onClick={(e) => {
                   dispatch(routerStatePush(data.key));
                   dispatch(subMenuChange(0));
@@ -40,14 +40,8 @@ function MobileMenu() {
                 }}
               >
                 {data.title}
-              </button>
-              <ul
-                style={
-                  routerState === data.key
-                    ? { display: "block" }
-                    : { display: "none" }
-                }
-              >
+              </Link>
+              <ul>
                 {LeftMenuData[data.key].map((data2) => {
                   return (
                     <li key={data2.key}>
@@ -59,7 +53,7 @@ function MobileMenu() {
                         }}
                         style={
                           subMenuState === data2.key
-                            ? { color: "var(--primary600)"}
+                            ? { color: "var(--primary600)" }
                             : { color: "var(--gray700)" }
                         }
                       >
