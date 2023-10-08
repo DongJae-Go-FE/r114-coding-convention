@@ -73,6 +73,7 @@ ${({ subMenuState }) => {
           li {
             &:nth-of-type(${parseInt(subMenuState) + 1}) {
               a {
+                left: 15px;
                 color: var(--primary600);
               }
             }

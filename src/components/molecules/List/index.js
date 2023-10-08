@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import MinorTitle from "../../atoms/MinorTitle";
 import Styled from "./styled";
 
-function List({ title, list, link, listClick, menuData }) {
+function List({ title, list, link, listClick, listStyle ,menuData }) {
   const listData = (data1, data2) => {
     listClick(data1, data2);
   };
 
   return (
-    <Styled>
+    <Styled link={link} listStyle={listStyle}>
       {title === null ? "" : <MinorTitle title={title} />}
       <ul>
         {link

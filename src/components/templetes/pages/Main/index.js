@@ -37,6 +37,7 @@ function Main() {
               link={true}
               menuData={data.key}
               listClick={listClick}
+              listStyle="disc"
               key={data.key}
             />
           );
@@ -53,6 +54,7 @@ function Main() {
             },
           ]}
           link={false}
+          listStyle="disc"
         />
       </div>
       <SubTitle title="담당자 (Manager)" />
