@@ -27,11 +27,6 @@ function LeftMenu() {
                     onClick={() => {
                       dispatch(subMenuChange(data.key));
                     }}
-                    style={
-                      subMenuState === data.key
-                        ? { fontWeight: "bold", color: "var(--black)" }
-                        : { fontWeight: "normal" }
-                    }
                   >
                     {data.title}
                   </Link>
@@ -51,11 +46,6 @@ function LeftMenu() {
                     onClick={() => {
                       dispatch(subMenuChange(data.key));
                     }}
-                    style={
-                      subMenuState === data.key
-                        ? { fontWeight: "bold", color: "var(--black)" }
-                        : { fontWeight: "normal" }
-                    }
                   >
                     {data.title}
                   </Link>
@@ -75,11 +65,7 @@ function LeftMenu() {
                     onClick={() => {
                       dispatch(subMenuChange(data.key));
                     }}
-                    style={
-                      subMenuState === data.key
-                        ? { fontWeight: "bold" }
-                        : { fontWeight: "normal" }
-                    }
+
                   >
                     {data.title}
                   </Link>
@@ -99,11 +85,6 @@ function LeftMenu() {
                     onClick={() => {
                       dispatch(subMenuChange(data.key));
                     }}
-                    style={
-                      subMenuState === data.key
-                        ? { fontWeight: "bold" }
-                        : { fontWeight: "normal" }
-                    }
                   >
                     {data.title}
                   </Link>
@@ -116,7 +97,7 @@ function LeftMenu() {
   };
 
   return (
-    <Styled menuState={menuState} routerState={routerState}>
+    <Styled menuState={menuState} routerState={routerState} subMenuState={subMenuState}>
       {menuList()}
     </Styled>
   );

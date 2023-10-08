@@ -54,7 +54,7 @@ const Styled = styled.header`
             content: "";
             display: block;
             width: 0;
-            height: 3px;
+            height: 2px;
             position: absolute;
             bottom: -3px;
             background-color: var(--primary600);

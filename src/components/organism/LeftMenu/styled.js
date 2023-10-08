@@ -18,13 +18,18 @@ const Styled = styled.div`
     list-style: none;
     li {
       a {
+        position: relative;
+        left: 0;
         font-size: 20px;
-        color: var(--gray700);
+        color: var(--black);
+        font-weight: bold;
         text-decoration: none;
+        transition: left ${transitionDelay}s;
 
         &:hover {
-          color: var(--black);
-          font-weight: bold !important; //보류
+          left: 15px;
+          color: var(--primary600);
+          transition: left ${transitionDelay}s;
         }
       }
 
@@ -55,6 +60,24 @@ const Styled = styled.div`
       return css`
         left: -200px;
         transition: left ${transitionDelay}s, width ${transitionDelay}s;
+      `.styles;
+    }
+  }}
+
+${({ subMenuState }) => {
+    if (subMenuState === "") {
+      return css``.styles;
+    } else {
+      return css`
+        ul {
+          li {
+            &:nth-of-type(${parseInt(subMenuState) + 1}) {
+              a {
+                color: var(--primary600);
+              }
+            }
+          }
+        }
       `.styles;
     }
   }}
