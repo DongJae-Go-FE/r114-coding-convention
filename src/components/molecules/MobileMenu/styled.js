@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { css } from "@emotion/react";
 
 const Styled = styled.div`
   width: 80%;
@@ -36,24 +37,48 @@ const Styled = styled.div`
         padding-left: 20px;
         background-color: transparent;
         border: none;
+        border-bottom: 1px solid var(--gray300);
         font-size: 20px;
+        font-weight: bold;
         color: var(--gray700);
         text-align: left;
         cursor: pointer;
+
+        &:hover {
+          color: var(--black);
+        }
       }
+      ${({ routerState }) => {
+        if (routerState) {
+          return css`
+            &:nth-of-type(${parseInt(routerState) + 1}) {
+              button {
+                color: var(--black);
+              }
+            }
+          `.styles;
+        }
+      }}
 
       ul {
-        display: none;
+        margin: 10px 0;
         list-style: none;
+
         li {
           a {
-            display: block;
+            display: flex;
+            align-items: center;
             width: 100%;
             height: 40px;
             padding-left: 20px;
-            font-size: 20px;
-            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
             color: var(--gray700);
+            text-decoration: none;
+
+            &:hover {
+              color: var(--primary600) !important;
+            }
           }
         }
       }

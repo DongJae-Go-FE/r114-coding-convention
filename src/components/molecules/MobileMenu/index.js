@@ -17,7 +17,7 @@ function MobileMenu() {
   let subMenuState = useSelector((state) => state.subMenu);
 
   return (
-    <Styled>
+    <Styled routerState={routerState}>
       <button
         type="button"
         onClick={() => {
@@ -38,11 +38,6 @@ function MobileMenu() {
                   dispatch(subMenuChange(0));
                   e.stopPropagation();
                 }}
-                style={
-                  routerState === data.key
-                    ? { fontWeight: "bold" }
-                    : { fontWeight: "normal" }
-                }
               >
                 {data.title}
               </button>
@@ -64,8 +59,8 @@ function MobileMenu() {
                         }}
                         style={
                           subMenuState === data2.key
-                            ? { fontWeight: "bold" }
-                            : { fontWeight: "normal" }
+                            ? { color: "var(--primary600)"}
+                            : { color: "var(--gray700)" }
                         }
                       >
                         {data2.title}
