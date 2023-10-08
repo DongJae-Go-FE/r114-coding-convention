@@ -79,7 +79,7 @@ const Styled = styled.div`
             text-decoration: none;
 
             &:hover {
-              color: var(--primary600) !important; //고민.
+              color: var(--primary600) !important; //고민
             }
           }
         }
