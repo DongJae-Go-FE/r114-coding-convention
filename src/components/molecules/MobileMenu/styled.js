@@ -53,7 +53,7 @@ const Styled = styled.div`
         if (routerState) {
           return css`
             &:nth-of-type(${parseInt(routerState) + 1}) {
-              button {
+              a {
                 color: var(--black);
               }
             }
