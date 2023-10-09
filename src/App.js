@@ -7,25 +7,25 @@ import LeftMenu from "./components/organism/LeftMenu";
 import Content from "./components/organism/Content";
 import Footer from "./components/organism/Footer";
 
-import Page0000 from "./components/templetes/pages/page00/Page00_01";
-import Page0001 from "./components/templetes/pages/page00/Page00_02";
-import Page0002 from "./components/templetes/pages/page00/Page00_03";
-import Page0003 from "./components/templetes/pages/page00/Page00_04";
+import Page0000 from "./components/templetes/pages/basicPolicy/Page00_01";
+import Page0001 from "./components/templetes/pages/basicPolicy/Page00_02";
+import Page0002 from "./components/templetes/pages/basicPolicy/Page00_03";
+import Page0003 from "./components/templetes/pages/basicPolicy/Page00_04";
 
-import Page0100 from "./components/templetes/pages/page01/Page01_01";
-import Page0101 from "./components/templetes/pages/page01/Page01_02";
-import Page0102 from "./components/templetes/pages/page01/Page01_03";
-import Page0103 from "./components/templetes/pages/page01/Page01_04";
+import Page0100 from "./components/templetes/pages/rulesGuide/Page01_01";
+import Page0101 from "./components/templetes/pages/rulesGuide/Page01_02";
+import Page0102 from "./components/templetes/pages/rulesGuide/Page01_03";
+import Page0103 from "./components/templetes/pages/rulesGuide/Page01_04";
 
-import Page0200 from "./components/templetes/pages/page02/Page02_01";
-import Page0201 from "./components/templetes/pages/page02/Page02_02";
-import Page0202 from "./components/templetes/pages/page02/Page02_03";
-import Page0203 from "./components/templetes/pages/page02/Page02_04";
+import Page0200 from "./components/templetes/pages/library/Page02_01";
+import Page0201 from "./components/templetes/pages/library/Page02_02";
+import Page0202 from "./components/templetes/pages/library/Page02_03";
+import Page0203 from "./components/templetes/pages/library/Page02_04";
 
-import Page0300 from "./components/templetes/pages/page03/Page03_01";
-import Page0301 from "./components/templetes/pages/page03/Page03_02";
-import Page0302 from "./components/templetes/pages/page03/Page03_03";
-import Page0303 from "./components/templetes/pages/page03/Page03_04";
+import Page0300 from "./components/templetes/pages/webAccessibility/Page03_01";
+import Page0301 from "./components/templetes/pages/webAccessibility/Page03_02";
+import Page0302 from "./components/templetes/pages/webAccessibility/Page03_03";
+import Page0303 from "./components/templetes/pages/webAccessibility/Page03_04";
 
 import Main from "./components/templetes/pages/Main";
 
