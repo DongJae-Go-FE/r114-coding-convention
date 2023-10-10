@@ -3,10 +3,11 @@ let LeftMenuData = [
     { key: 0, to: "/basicPolicy", title: "기본 정책" },
   ],
   [
-    { key: 0, to: "/rulesGuide", title: "서브 링크1-1" },
-    { key: 1, to: "/1/2", title: "서브 링크1-2" },
-    { key: 2, to: "/1/3", title: "서브 링크1-3" },
-    { key: 3, to: "/1/4", title: "서브 링크1-4" },
+    { key: 0, to: "/rulesGuide", title: "규칙 가이드" },
+    { key: 1, to: "/rulesGuide/naming", title: "Naming Rules" },
+    { key: 2, to: "/rulesGuide/html", title: "HTML Rules" },
+    { key: 3, to: "/rulesGuide/css", title: "CSS Rules" },
+    { key: 3, to: "/rulesGuide/javaScript", title: "JavaScript Rules" },
   ],
   [
     { key: 0, to: "/library", title: "서브 링크2-1" },

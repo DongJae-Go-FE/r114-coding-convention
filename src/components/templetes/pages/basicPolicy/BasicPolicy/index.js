@@ -45,7 +45,6 @@ function BasicPolicy() {
       <Hr top={80} bottom={80} mobileTop={15} mobileBottom={15} />
       <SubTitle title="프로젝트 환경" />
       <CustomTable list={data} />
-      <SubTitle title="네이밍 규칙" />
       <SubTitle title="기본 파일 / 폴더 구성" />
       <SubTitle title="아토믹 디자인 파일 / 폴더 구성" />
     </Layout>

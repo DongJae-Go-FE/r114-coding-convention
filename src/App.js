@@ -36,10 +36,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/basicPolicy" element={<BasicPolicy />}></Route>
-            <Route path="/rulesGuide" element={<RulesGuide />} />
-            <Route path="/1/2" element={<Page0101 />} />
-            <Route path="/1/3" element={<Page0102 />} />
-            <Route path="/1/4" element={<Page0103 />} />
+            <Route path="/rulesGuide" element={<RulesGuide />}>
+              <Route path="/rulesGuide/naming" element={<Page0101 />} />
+              <Route path="/rulesGuide/html" element={<Page0102 />} />
+              <Route path="/rulesGuide/css" element={<Page0103 />} />
+            </Route>
             <Route path="/library" element={<Library />} />
             <Route path="/2/2" element={<Page0201 />} />
             <Route path="/2/3" element={<Page0202 />} />
