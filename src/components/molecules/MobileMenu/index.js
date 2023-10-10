@@ -32,7 +32,7 @@ function MobileMenu() {
           return (
             <li key={data.key}>
               <Link
-                to={data.key}
+                to={data.to}
                 onClick={(e) => {
                   dispatch(routerStatePush(data.key));
                   dispatch(subMenuChange(0));
