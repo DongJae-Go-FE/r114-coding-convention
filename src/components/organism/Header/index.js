@@ -39,7 +39,7 @@ function Header() {
             return (
               <li key={data.key}>
                 <Link
-                  to={data.key}
+                  to={data.to}
                   onClick={() => {
                     dispatch(routerStatePush(data.key));
                     dispatch(subMenuChange(0));

@@ -2,11 +2,11 @@ import React from "react";
 import Layout from "../../../common/Layout";
 
 
-function Page00_02() {
+function RulesGuide() {
   return (
-    <Layout title="페이지0-2">
+    <Layout title="규칙 가이드">
     </Layout>
   );
 }
 
-export default Page00_02;
+export default RulesGuide;

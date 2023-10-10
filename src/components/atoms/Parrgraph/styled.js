@@ -5,6 +5,7 @@ const Styled = styled.p`
   margin-bottom: ${(props) => (props.bottom ? props.bottom : 40)}px;
   font-weight: 500;
   color: var(--gray600);
+  line-height: 1.1;
   white-space: pre-line;
 
   @media (max-width: ${mobileBreakPoint}px) {

@@ -2,11 +2,11 @@ import React from "react";
 import Layout from "../../../common/Layout";
 
 
-function Page01_01() {
+function WebAccessibility() {
   return (
-    <Layout title="페이지1-1">
+    <Layout title="웹 접근성">
     </Layout>
   );
 }
 
-export default Page01_01;
+export default WebAccessibility;

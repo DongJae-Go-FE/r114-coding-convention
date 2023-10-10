@@ -2,11 +2,11 @@ import React from "react";
 import Layout from "../../../common/Layout";
 
 
-function Page00_03() {
+function Library() {
   return (
-    <Layout title="페이지0-3">
+    <Layout title="리액트">
     </Layout>
   );
 }
 
-export default Page00_03;
+export default Library;
