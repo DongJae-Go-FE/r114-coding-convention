@@ -10,31 +10,41 @@ function BasicPolicy() {
   const tableData = [
     {
       key: 0,
+      title: "코드 에디터",
+      content: "Visual Studio Code",
+    },
+    {
+      key: 1,
       title: "마크업 언어",
       content: "HTML5, CSS3",
     },
     {
-      key: 1,
+      key: 2,
       title: "개발 언어",
       content: "JavaScript, TypeScript(선택사항)",
     },
     {
-      key: 2,
+      key: 3,
       title: "라이브러리",
       content: "React, Next.js(선택사항)",
     },
     {
-      key: 3,
+      key: 4,
+      title: "코드 에디터 익스텐션",
+      content: "ESLint, Prettier, Figma For VS Code, GitLens, vscode-styled-compomemts",
+    },
+    {
+      key: 5,
       title: "인코딩",
       content: "UTF-8",
     },
     {
-      key: 4,
+      key: 6,
       title: "크로스 브라우징",
       content: "Chrome, Microsoft Edge, Safari, Firefox, Opera, Whale",
     },
     {
-      key: 5,
+      key: 7,
       title: "해상도",
       content: "보류",
     },
