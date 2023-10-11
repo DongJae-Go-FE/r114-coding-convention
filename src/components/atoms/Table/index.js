@@ -7,6 +7,7 @@ function Table({ caption, columns, tableData = [] }) {
   //colunmns의 value값이랑 tableData의 프로퍼티 명은 연결 시켜야 한다.
 
   const headerKey = columns.map((header) => header.value);
+  
   return (
     <Styled>
       <table>

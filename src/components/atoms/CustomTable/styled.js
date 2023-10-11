@@ -3,7 +3,10 @@ import { mobileBreakPoint } from "../../../constants/constants";
 
 const Styled = styled.div`
   margin-bottom: 160px;
+  overflow-x: auto;
   ul {
+    width: 100%;
+    min-width: 1625px;
     border-top: 2px solid var(--black);
     border-bottom: 2px solid var(--black);
     li {
@@ -42,11 +45,7 @@ const Styled = styled.div`
   }
 
   @media (max-width: ${mobileBreakPoint}px) {
-    overflow-x: auto;
     margin-bottom: 15vw;
-    ul {
-      width: 706px;
-    }
   }
 `;
 
