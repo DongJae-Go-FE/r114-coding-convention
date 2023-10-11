@@ -1,11 +1,11 @@
 import React from "react";
 import Styled from "./styled";
 
-function CustomTable({ list }) {
+function CustomTable({ tableData }) {
   return (
     <Styled>
       <ul>
-        {list.map((data) => {
+        {tableData.map((data) => {
           return (
             <li key={data.key}>
               <div>{data.title}</div>
