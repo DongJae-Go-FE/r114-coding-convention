@@ -53,7 +53,7 @@ yarn start
 - Router
 - Context 제외 검토중
 - Redux 
-
+- Redux Persist
 
 ## Extension
 
