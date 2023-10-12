@@ -7,7 +7,7 @@ let LeftMenuData = [
     { key: 1, to: "/rulesGuide/naming", title: "Naming Rules" },
     { key: 2, to: "/rulesGuide/html", title: "HTML Rules" },
     { key: 3, to: "/rulesGuide/css", title: "CSS Rules" },
-    { key: 3, to: "/rulesGuide/javaScript", title: "JavaScript Rules" },
+    { key: 4, to: "/rulesGuide/javaScript", title: "JavaScript Rules" },
   ],
   [
     { key: 0, to: "/library", title: "서브 링크2-1" },

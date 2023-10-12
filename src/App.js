@@ -17,6 +17,7 @@ import RulesGuide from "./components/templetes/pages/rulesGuide/RulesGuide";
 import Page0101 from "./components/templetes/pages/rulesGuide/Page01_02";
 import Page0102 from "./components/templetes/pages/rulesGuide/Page01_03";
 import Page0103 from "./components/templetes/pages/rulesGuide/Page01_04";
+import Page0104 from "./components/templetes/pages/rulesGuide/Page01_05";
 
 import Library from "./components/templetes/pages/library/Library";
 import Page0201 from "./components/templetes/pages/library/Page02_02";
@@ -47,6 +48,7 @@ function App() {
                 <Route path="/rulesGuide/naming" element={<Page0101 />} />
                 <Route path="/rulesGuide/html" element={<Page0102 />} />
                 <Route path="/rulesGuide/css" element={<Page0103 />} />
+                <Route path="/rulesGuide/javaScript" element={<Page0104 />} />
               </Route>
               <Route path="/library" element={<Library />} />
               <Route path="/2/2" element={<Page0201 />} />

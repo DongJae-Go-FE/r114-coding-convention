@@ -69,6 +69,7 @@ function BasicPolicy() {
       value: "info",
     },
   ];
+  
   const tableData2 = [
     {
       classification: <p>font</p>,
