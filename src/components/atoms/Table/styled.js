@@ -9,7 +9,7 @@ const Styled = styled.div`
 
   table {
     width: 100%;
-    min-width: 1625px;
+    min-width: 1433px;
     border-collapse: collapse;
     table-layout: fixed;
     caption {
@@ -46,6 +46,7 @@ const Styled = styled.div`
           ul {
             list-style: none;
             li {
+              height: 47px;
               padding: 15px;
               &:not(:last-child) {
                 border-bottom: 1px solid var(--gray300);

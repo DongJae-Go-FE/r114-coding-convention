@@ -171,17 +171,17 @@ function BasicPolicy() {
     {
       text: "분류 폴더",
       value: "classification",
-      width: "100px",
+      width: "90px",
     },
     {
       text: "서브 폴더",
       value: "sub",
-      width: "150px",
+      width: "120px",
     },
     {
       text: "아토믹 폴더",
       value: "sub2",
-      width: "150px",
+      width: "120px",
     },
     {
       text: "파일 설명",
@@ -211,18 +211,18 @@ function BasicPolicy() {
       info: (
         <ul>
           <li>
-            atom은 더 이상 분해할 수 없는 기본 컴포넌트입니다. label, input,
-            button과 같이 기본 태그 혹은 글꼴, 애니메이션, 컬러 팔레트,
-            레이아웃과 같이 추상적인 요소도 포함될 수 있습니다.
+            atom은 더 이상 분해할 수 없는 기본 컴포넌트입니다. ex)label, input,
+            button,글꼴, 애니메이션, 컬러 팔레트,
+            레이아웃
           </li>
           <li>
-            molecule은 여러 개의 atom을 결합하여 자신의 고유한 특성을 가집니다
+            molecule은 여러 개의 atom을 결합하여 자신의 고유한 특성을 가집니다.
             그리고 molecule의 중요한 점은 한 가지 일을 하는 것입니다. ex)입력
             폼, 내비게이션, 카드
           </li>
           <li>
-            organism은 앞 단계보다 좀 더 복잡하고 서비스에서 표현될 수 있는
-            명확한 영역과 특정 컨텍스트를 가집니다. 이것은 atom, molecule,
+            organism은 좀 더 복잡하고 서비스에서 표현될 수 있는
+            명확한 영역과 특정 컨텍스트를 가지고 atom, molecule,
             organism으로 구성할 수 있습니다. ex) 헤더, 풋터
           </li>
           <li>

@@ -6,7 +6,7 @@ const Styled = styled.div`
   overflow-x: auto;
   ul {
     width: 100%;
-    min-width: 1625px;
+    min-width: 1433px;
     border-top: 2px solid var(--black);
     border-bottom: 2px solid var(--black);
     li {
