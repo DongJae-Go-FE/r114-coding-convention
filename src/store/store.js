@@ -1,4 +1,7 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
+import { combineReducers } from "@reduxjs/toolkit";
+import storage from "redux-persist/lib/storage";
+import { persistReducer } from "redux-persist";
 
 let menu = createSlice({
   name: "menu",
@@ -40,13 +43,23 @@ let subMenu = createSlice({
   },
 });
 
+const reducers = combineReducers({
+  menu: menu.reducer,
+  router: router.reducer,
+  drawerIsOpen: drawerIsOpen.reducer,
+  subMenu: subMenu.reducer,
+});
+
+const persistConfig = {
+  key: "root",
+  storage,
+  whiteList: ["menu", "router", "drawerIsOpen", "subMenu"],
+};
+
+const persistedReducer = persistReducer(persistConfig, reducers);
+
 export default configureStore({
-  reducer: {
-    menu: menu.reducer,
-    router: router.reducer,
-    drawerIsOpen: drawerIsOpen.reducer,
-    subMenu: subMenu.reducer,
-  },
+  reducer:  persistedReducer ,
 });
 
 export let { changeState } = menu.actions;
