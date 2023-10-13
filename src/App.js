@@ -31,9 +31,9 @@ import Page0303 from "./components/templetes/pages/webAccessibility/Page03_04";
 
 import Main from "./components/templetes/pages/Main";
 
-export let persistor = persistStore(store);
-
 function App() {
+  let persistor = persistStore(store);
+
   return (
     <div className="App">
       <Provider store={store}>

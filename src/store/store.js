@@ -1,6 +1,6 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 import { combineReducers } from "@reduxjs/toolkit";
-import storage from "redux-persist/lib/storage";
+import storageSession from 'redux-persist/lib/storage/session'
 import { persistReducer } from "redux-persist";
 
 let menu = createSlice({
@@ -52,14 +52,17 @@ const reducers = combineReducers({
 
 const persistConfig = {
   key: "root",
-  storage,
+  storage: storageSession,
   whiteList: ["menu", "router", "drawerIsOpen", "subMenu"],
 };
 
 const persistedReducer = persistReducer(persistConfig, reducers);
 
 export default configureStore({
-  reducer:  persistedReducer ,
+  reducer: persistedReducer,
+
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({ serializableCheck: false }),
 });
 
 export let { changeState } = menu.actions;
