@@ -19,7 +19,7 @@ import Html from "./components/templetes/pages/rulesGuide/Html";
 import Css from "./components/templetes/pages/rulesGuide/Css";
 import JavaScript from "./components/templetes/pages/rulesGuide/JavaScript";
 
-import ReactRules from "./components/templetes/pages/reactRules/ReactRules";
+import ReactRules from "./components/templetes/pages/reactRules/ReactRulesMain";
 import Component from "./components/templetes/pages/reactRules/Component";
 import EmotionStyled from "./components/templetes/pages/reactRules/EmotionStyled";
 import Hook from "./components/templetes/pages/reactRules/Hook";

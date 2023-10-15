@@ -7,7 +7,7 @@ import Hr from "../../../../atoms/Hr";
 import SubTitle from "../../../../atoms/SubTitle";
 import List from "../../../../molecules/List";
 
-function ReactRules() {
+function ReactRulesMain() {
   let subMenuState = useSelector((state) => state.subMenu);
 
   const listData = [
@@ -40,4 +40,4 @@ function ReactRules() {
   );
 }
 
-export default ReactRules;
+export default ReactRulesMain;
