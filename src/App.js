@@ -14,20 +14,19 @@ import Footer from "./components/organism/Footer";
 import BasicPolicy from "./components/templetes/pages/basicPolicy/BasicPolicy";
 
 import RulesGuide from "./components/templetes/pages/rulesGuide/RulesGuide";
-import Page0101 from "./components/templetes/pages/rulesGuide/Page01_02";
-import Page0102 from "./components/templetes/pages/rulesGuide/Page01_03";
-import Page0103 from "./components/templetes/pages/rulesGuide/Page01_04";
-import Page0104 from "./components/templetes/pages/rulesGuide/Page01_05";
+import Naming from "./components/templetes/pages/rulesGuide/NamingRulse";
+import Html from "./components/templetes/pages/rulesGuide/Html";
+import Css from "./components/templetes/pages/rulesGuide/Css";
+import JavaScript from "./components/templetes/pages/rulesGuide/JavaScript";
 
-import Library from "./components/templetes/pages/library/Library";
-import Page0201 from "./components/templetes/pages/library/Page02_02";
-import Page0202 from "./components/templetes/pages/library/Page02_03";
-import Page0203 from "./components/templetes/pages/library/Page02_04";
+import ReactRules from "./components/templetes/pages/reactRules/ReactRules";
+import Component from "./components/templetes/pages/reactRules/Component";
+import EmotionStyled from "./components/templetes/pages/reactRules/EmotionStyled";
+import Hook from "./components/templetes/pages/reactRules/Hook";
 
 import WebAccessibility from "./components/templetes/pages/webAccessibility/WebAccessibility";
-import Page0301 from "./components/templetes/pages/webAccessibility/Page03_02";
-import Page0302 from "./components/templetes/pages/webAccessibility/Page03_03";
-import Page0303 from "./components/templetes/pages/webAccessibility/Page03_04";
+import Accessibility from "./components/templetes/pages/webAccessibility/Accessibility";
+import WaiAria from "./components/templetes/pages/webAccessibility/WaiAria";
 
 import Main from "./components/templetes/pages/Main";
 
@@ -45,19 +44,26 @@ function App() {
               <Route path="/" element={<Main />} />
               <Route path="/basicPolicy" element={<BasicPolicy />}></Route>
               <Route path="/rulesGuide" element={<RulesGuide />}>
-                <Route path="/rulesGuide/naming" element={<Page0101 />} />
-                <Route path="/rulesGuide/html" element={<Page0102 />} />
-                <Route path="/rulesGuide/css" element={<Page0103 />} />
-                <Route path="/rulesGuide/javaScript" element={<Page0104 />} />
+                <Route path="/rulesGuide/naming" element={<Naming />} />
+                <Route path="/rulesGuide/html" element={<Html />} />
+                <Route path="/rulesGuide/css" element={<Css />} />
+                <Route path="/rulesGuide/javaScript" element={<JavaScript />} />
               </Route>
-              <Route path="/library" element={<Library />} />
-              <Route path="/2/2" element={<Page0201 />} />
-              <Route path="/2/3" element={<Page0202 />} />
-              <Route path="/2/4" element={<Page0203 />} />
-              <Route path="/webAccessibility" element={<WebAccessibility />} />
-              <Route path="/3/2" element={<Page0301 />} />
-              <Route path="/3/3" element={<Page0302 />} />
-              <Route path="/3/4" element={<Page0303 />} />
+              <Route path="/reactRulse" element={<ReactRules />}>
+                <Route path="/reactRulse/component" element={<Component />} />
+                <Route
+                  path="/reactRulse/emotionStyled"
+                  element={<EmotionStyled />}
+                />
+                <Route path="/reactRulse/hook" element={<Hook />} />
+              </Route>
+              <Route path="/webAccessibility" element={<WebAccessibility />}>
+                <Route
+                  path="/webAccessibility/accessibility"
+                  element={<Accessibility />}
+                />
+                <Route path="/webAccessibility/waiAria" element={<WaiAria />} />
+              </Route>
             </Routes>
             <Footer />
           </Content>
